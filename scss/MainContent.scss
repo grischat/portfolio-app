@@ -1,0 +1,23 @@
+@import '../scss/main.scss';
+
+.main__content {
+  height: 100%;
+  
+  .image__homepage {
+    margin: 2rem;
+  }
+  .image__photo {
+    margin: 2rem;
+  }
+  .aboutme__text {
+    margin: 2rem;
+    font-family: $public-sans;
+    line-height: 30px;
+  }
+  .contactme__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem;
+  }
+}

@@ -1,0 +1,20 @@
+@import 'main';
+
+.footer {
+    width: 23.46rem; 
+     
+    background-color: $grayish-dark-blue;
+    margin-top: auto;
+    
+    .footer__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        flex-direction: column;
+        text-align: center;
+    }
+    .links__text li {
+        margin: 1rem 0rem;
+    }
+}
