@@ -17,7 +17,7 @@ function MainContent() {
         src="../media/images/homepage/mobile/image-homepage-hero.jpg"
         alt="Image of monitor with website in it"
       ></img>
-      <h1>Hey, my name is Hryhorii Kosolap and I am front-end developer</h1>
+      <h1>Hey, my name is Hryhorii Kosolap and I am front-end developer </h1>
       <Button showIcon={true} className="btn__aboutme" onClick={scrollToTarget}>
         ABOUT ME
       </Button>

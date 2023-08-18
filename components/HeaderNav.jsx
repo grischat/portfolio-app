@@ -1,11 +1,19 @@
 import "../scss/HeaderNav.scss";
+import React, { useState } from "react";
 import { Squash as Hamburger } from 'hamburger-react'
+import Menu from "./Menu";
 function HeaderNav() {
+  const [isOpen, setOpen] = useState(false);
+
+  function toggleMenu() {
+    setOpen(!isOpen);
+  };
   return (
     <div className="header__nav">
+      
       <img src="../media/images/logo.svg" alt="Black triangles logo" />
-      {/* <img className ='nav__hamburger'src="../media/images/icons/hamburger.svg" alt="Black triangles logo" /> */}
-      <Hamburger className ='hamburger-react'/>
+      <Hamburger toggled={isOpen} toggle={toggleMenu}></Hamburger>
+      {isOpen && <Menu/>}
     </div>
   );
 }
