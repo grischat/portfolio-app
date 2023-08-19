@@ -1,20 +1,16 @@
-import React from "react";
-import "../scss/main.scss";
 import Wrapper from "../components/Wrapper";
 import HeaderNav from "../components/HeaderNav";
 import Footer from "../components/Footer";
-import MainContentHome from "../components/MainContentHome";
-
-function App() {
+function Contact() {
   return (
     <Wrapper>
       <HeaderNav />
-
-      <MainContentHome />
-
+      <div>
+        <h1>This is the Contact page.</h1>
+      </div>
       <Footer />
     </Wrapper>
   );
 }
 
-export default App;
+export default Contact;

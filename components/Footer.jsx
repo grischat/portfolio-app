@@ -1,4 +1,5 @@
 import "../scss/Footer.scss";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -10,13 +11,13 @@ function Footer() {
         ></img>
         <ul className="links__text">
           <li>
-            <a href="home.html">HOME</a>
+            <Link to="/" >HOME</Link>
           </li>
           <li>
-            <a href="portfolio.html">PORTFOLIO</a>
+            <Link to="/portfolio" preventScrollReset={true}>PORTFOLIO</Link>
           </li>
           <li>
-            <a href="contact.html">CONTACT ME</a>
+            <Link to="/contact">CONTACT ME</Link>
           </li>
         </ul>
 
@@ -38,7 +39,10 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href='https://www.linkedin.com/in/hryhorii-kosolap-1b7892231/' target="_blank">
+            <a
+              href="https://www.linkedin.com/in/hryhorii-kosolap-1b7892231/"
+              target="_blank"
+            >
               <img
                 src="../media/images/icons/linkedin-white.svg"
                 alt="linkedin icon"

@@ -1,17 +1,17 @@
 import '../scss/Menu.scss'
-
+import { Link } from "react-router-dom";
 function Menu() {
   return (
     <div>
       <ul className="menu__container">
         <li>
-          <a href="home.html">HOME</a>
+          <Link to="/">HOME</Link>
         </li>
         <li>
-          <a href="portfolio.html">PORTFOLIO</a>
+          <Link to="/portfolio">PORTFOLIO</Link>
         </li>
         <li>
-          <a href="contact.html">CONTACT ME</a>
+          <Link to="/contact">CONTACT ME</Link>
         </li>
       </ul>
     </div>
