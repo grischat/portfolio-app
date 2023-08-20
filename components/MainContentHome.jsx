@@ -12,6 +12,7 @@ function MainContentHome() {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
   };
+  
   return (
     <div className="main__content">
       <img
@@ -30,7 +31,7 @@ function MainContentHome() {
       ></img>
       <BottomLine />
       <h1 id="aboutme">About Me</h1>
-      <p className="aboutme__text">
+      <p>
         I`m a front-end developer looking for a new role in an exciting company.
         I focus on writing accessible HTML, using modern CSS practices and
         writing clean JavaScript. When writing JavaScript code, I mostly use
@@ -48,7 +49,7 @@ function MainContentHome() {
       <div className="contactme__container">
         <h1> Interested in doing a project together?</h1>
         <Link to="/contact">
-          <Button showIcon={false} className="btn__contactme">
+          <Button  showIcon={false} className="btn__contactme">
             CONTACT ME
           </Button>
         </Link>
