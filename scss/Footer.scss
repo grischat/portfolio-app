@@ -1,10 +1,17 @@
 @import "main";
 
+.contactme__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3rem;
+}
+
 .footer {
   width: 23.46rem;
-
   background-color: $grayish-dark-blue;
   margin-top: auto;
+  
 
   .footer__content {
     display: flex;

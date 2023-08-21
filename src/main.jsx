@@ -5,6 +5,7 @@ import PortfolioIndex from "./PortfolioIndex.jsx";
 import Contact from "./Contact.jsx";
 import ScrollToTop from "../components/ScrollToTheTop.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProjectDetails from "./ProjectDetails.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/" element={<App />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/portfolio" element={<PortfolioIndex />}></Route>
+          <Route path="/portfolio/:projectId" element={<ProjectDetails/>} />
         </Routes>
       </main>
     </BrowserRouter>

@@ -46,14 +46,7 @@ function MainContentHome() {
         </Button>
       </Link>
       <BottomLine />
-      <div className="contactme__container">
-        <h1> Interested in doing a project together?</h1>
-        <Link to="/contact">
-          <Button  showIcon={false} className="btn__contactme">
-            CONTACT ME
-          </Button>
-        </Link>
-      </div>
+      
     </div>
   );
 }

@@ -1,9 +1,9 @@
 @import "main.scss";
 
 .btn__container {
-  // width: 3rem;
-  margin: 2rem;
   
+  margin: 2rem;
+
   .btn__aboutme {
     width: 12.5rem;
     height: 3rem;
@@ -15,41 +15,49 @@
     border: none;
     font-weight: 100;
     cursor: pointer;
-    border: none;
     transition: background-color 0.5s ease, opacity 0.5s ease;
   }
-  
 
   .btn__goto {
     font-family: $public-sans;
     width: 12.62rem;
     height: 3rem;
     background-color: transparent;
-    border-radius: 1px;
+    border-width: 1px;
     cursor: pointer;
     font-weight: 100;
     font-size: 12px;
     transition: 0.5s ease;
   }
   .btn__contactme {
-    
     font-family: $public-sans;
     width: 10.1rem;
     height: 3rem;
     background-color: transparent;
-    border-radius: 1px;
+    border-width: 1px;
     cursor: pointer;
     font-weight: 100;
     font-size: 12px;
     transition: 0.5s ease;
   }
-  
+
   .btn__viewproject {
     font-family: $public-sans;
     width: 10.1rem;
     height: 3rem;
     background-color: transparent;
-    border-radius: 1px;
+    border-width: 1px;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 12px;
+    transition: 0.5s ease;
+  }
+  .btn__visitwebsite {
+    font-family: $public-sans;
+    width: 10.1rem;
+    height: 3rem;
+    background-color: transparent;
+    border-width: 1px;
     cursor: pointer;
     font-weight: 100;
     font-size: 12px;
@@ -69,29 +77,25 @@
     transition: 0.5s ease;
   }
   .icon__image {
-    
     background-repeat: no-repeat;
     background-size: contain;
-    
-    
   }
-  
 }
 .btn__container:hover .triangle__icon,
 .btn__container:hover .btn__aboutme {
-    background-color: $cyan;
-    color:#eeecec
-  }
+  background-color: $cyan;
+  color: #eeecec;
+}
 
 .btn__container:hover .icon__image {
   background-image: url("../media/images/icons/down-arrows-black.svg");
   opacity: 1;
-  
 }
 
 .btn__container:hover .btn__contactme,
 .btn__container:hover .btn__goto,
-.btn__container:hover .btn__viewproject {
-  background-color: #33323D;
+.btn__container:hover .btn__viewproject,
+.btn__container:hover .btn__visitwebsite {
+  background-color: #33323d;
   color: #eeecec;
 }

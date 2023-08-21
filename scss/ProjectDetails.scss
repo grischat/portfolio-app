@@ -1,0 +1,21 @@
+@import '../scss/main.scss';
+
+.project__header {
+    margin:2rem;
+}
+.project__image {
+    margin: 2rem;
+}
+.description__p{
+    margin-top: 0rem;
+    margin-bottom:1.5rem;
+    font-size: 15px;
+    line-height: 30px;
+}
+.description__p-technologies {
+    color: $cyan;
+    margin-top:0rem;
+    margin-bottom:1rem;
+    font-size: 13px;
+    font-weight: 600; 
+}
