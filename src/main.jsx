@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App.jsx";
 import PortfolioIndex from "./PortfolioIndex.jsx";
-import Contact from "./Contact.jsx";
+import Contact from "./ContactIndex.jsx";
 import ScrollToTop from "../components/ScrollToTheTop.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjectDetails from "./ProjectDetails.jsx";
