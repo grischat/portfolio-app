@@ -21,7 +21,7 @@ function Contact() {
         Please do feel free to check out my online profiles below and get in
         touch using the form.
       </p>
-      <ul className="links__icons">
+      <ul className="links__icons-contact-page">
         <li>
           <a href="https://github.com/grischat" target="_blank">
             <img src="../media/images/icons/github.svg" alt="github icon"></img>
