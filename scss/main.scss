@@ -43,6 +43,7 @@ a {
     font-size: 12px;
     text-decoration: none;
     color: #ffffff;
+    
 }
 li {
     list-style-type: none;
@@ -53,4 +54,9 @@ p {
     margin: 2rem;
     font-family: $public-sans;
     line-height: 30px;
+}
+
+a#link {
+    display: block;
+    width: 0rem;
 }

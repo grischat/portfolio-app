@@ -12,7 +12,7 @@ function App() {
 
       <MainContentHome />
 
-      <Footer />
+      <Footer showContactMe={true}/>
     </Wrapper>
   );
 }

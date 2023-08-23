@@ -1,6 +1,6 @@
 import '../scss/BottomLine.scss'
 
-function BottomLine({style}) {
+function BottomLine() {
     return (
         <div className="bottomline">
         </div>

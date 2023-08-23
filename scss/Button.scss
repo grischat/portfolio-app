@@ -1,14 +1,27 @@
 @import "main.scss";
 
 .btn__container {
-  
+  width: 0rem;
   margin: 2rem;
-
+  
   .btn__aboutme {
     width: 12.5rem;
     height: 3rem;
     background-color: $dark-blue;
     padding-left: 2rem;
+    font-family: $public-sans;
+    font-size: 12px;
+    color: #ffffff;
+    border: none;
+    font-weight: 100;
+    cursor: pointer;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+  }
+  .btn__sendmsg {
+    width: 12.5rem;
+    height: 3rem;
+    background-color: $dark-blue;
+    text-align: center;
     font-family: $public-sans;
     font-size: 12px;
     color: #ffffff;
@@ -81,8 +94,16 @@
     background-size: contain;
   }
 }
+
+.btn__container .btn__contactme {
+  margin-left: 1.8rem;
+}
+.btn__container .btn__sendmsg {
+  margin-bottom: 3rem;
+}
 .btn__container:hover .triangle__icon,
-.btn__container:hover .btn__aboutme {
+.btn__container:hover .btn__aboutme,
+.btn__container:hover .btn__sendmsg {
   background-color: $cyan;
   color: #eeecec;
 }

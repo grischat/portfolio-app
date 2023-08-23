@@ -1,0 +1,38 @@
+@import "../scss/main.scss";
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem 0 2rem;
+}
+#message {
+  font-family: $public-sans;
+  padding: 1rem;
+  height: 6rem;
+  width: 19.5rem;
+  resize: none;
+  scrollbar-width: thin;
+  background-color: rgba(151, 151, 151, 0.3);
+  border-width: 0px;
+  padding-left: 1rem;
+}
+.form__field {
+  margin-bottom: 2rem;
+}
+
+.form__field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: $public-sans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.form__field input {
+  font-family: $public-sans;
+  width: 19.5rem;
+  height: 3rem;
+  background-color: rgba(151, 151, 151, 0.3);
+  border-width: 0px;
+  padding-left: 1rem;
+}

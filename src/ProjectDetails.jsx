@@ -38,7 +38,7 @@ function ProjectDetails() {
         <p className="description__p">{project.fullDescription}</p>
         <BottomLine/>
       </div>
-      <Footer />
+      <Footer showContactMe={true}/>
     </Wrapper>
   );
 }

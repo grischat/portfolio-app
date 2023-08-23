@@ -40,7 +40,7 @@ function MainContentHome() {
         remote teams. When I`m not coding, you`ll find me in a boxing gym.
         Boxing helps me to clear my mind and get an inner strength.
       </p>
-      <Link to='/portfolio'>
+      <Link id="link"to='/portfolio'>
         <Button showIcon={false} className="btn__goto">
           GO TO PORTFOLIO
         </Button>

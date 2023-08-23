@@ -1,19 +1,21 @@
 import "../scss/Footer.scss";
 import "../scss/MainContentHome.scss";
-import '../scss/Button.scss'
+import "../scss/Button.scss";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-function Footer() {
+function Footer({ showContactMe }) {
   return (
     <div>
-      <div className="contactme__container">
-        <h1> Interested in doing a project together?</h1>
-        <Link to="/contact">
-          <Button showIcon={false} className="btn__contactme">
-            CONTACT ME
-          </Button>
-        </Link>
-      </div>
+      {showContactMe && (
+        <div className="contactme__container">
+          <h1> Interested in doing a project together?</h1>
+          <Link id="link" to="/contact">
+            <Button showIcon={false} className="btn__contactme">
+              CONTACT ME
+            </Button>
+          </Link>
+        </div>
+      )}
       <div className="footer">
         <div className="footer__content">
           <img

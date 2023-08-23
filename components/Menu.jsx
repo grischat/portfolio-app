@@ -5,13 +5,13 @@ function Menu() {
     <div>
       <ul className="menu__container">
         <li>
-          <Link to="/">HOME</Link>
+          <Link  to="/">HOME</Link>
         </li>
         <li>
-          <Link to="/portfolio">PORTFOLIO</Link>
+          <Link  to="/portfolio">PORTFOLIO</Link>
         </li>
         <li>
-          <Link to="/contact">CONTACT ME</Link>
+          <Link  to="/contact">CONTACT ME</Link>
         </li>
       </ul>
     </div>

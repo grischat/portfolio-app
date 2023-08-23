@@ -26,7 +26,7 @@ function PortfolioIndex() {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam ratione quo reiciendis quia cupiditate? Reprehenderit, quasi minus itaque sequi exercitationem illum hic suscipit assumenda, voluptates labore, deleniti ut alias."
       />
 
-      <Footer />
+      <Footer showContactMe={true}/>
     </Wrapper>
   );
 }
