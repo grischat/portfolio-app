@@ -3,7 +3,7 @@ import Button from "../components/Button";
 import "../scss/PortfolioIndex.scss";
 import "../scss/ProjectBackground.scss";
 import { Link } from "react-router-dom";
-import projectsData from "../data/projects.json";
+
 function ProjectBackground({ imageSrc, title, description, url }) {
   return (
     <div className="project__container">
