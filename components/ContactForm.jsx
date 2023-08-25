@@ -14,21 +14,22 @@ function ContactForm() {
         </Link>
       </div>
     );
-  }  
+  }
   return (
     <form onSubmit={handleSubmit}>
       <div className="form__container">
         <div className="form__field">
           <label>Name</label>
-          <input placeholder="Your name" id="name" type="text"></input>
+          <input placeholder="Your name" id="name" type="text" required={true}></input>
         </div>
         <div className="form__field">
-          <label htmlFor="email">Email Address</label>
+          <label htmlFor="email">Email Address *</label>
           <input
             type="email"
             name="email"
             placeholder="Your email"
             id="email"
+            required={true}
           ></input>
         </div>
         <div className="form__field">
