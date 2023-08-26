@@ -1,8 +1,8 @@
 import '../scss/BottomLine.scss'
 
-function BottomLine() {
+function BottomLine({className = 'bottomline'}) {
     return (
-        <div className="bottomline">
+        <div className={className}>
         </div>
     )
 }

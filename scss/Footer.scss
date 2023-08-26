@@ -5,13 +5,21 @@
   flex-direction: column;
   text-align: center;
   margin: 3rem;
+  @media (min-width: 768px) {
+    margin: 5rem 2rem 5rem 2rem;
+    flex-direction: row;
+    .header__text-interested {
+      width: 21.5rem;
+      text-align: start;
+      margin: 0;
+    }
+  }
 }
 
 .footer {
-  width: 23.46rem;
+  width: auto;
   background-color: $grayish-dark-blue;
   margin-top: auto;
-  
 
   .footer__content {
     display: flex;
@@ -20,20 +28,35 @@
     height: 50vh;
     flex-direction: column;
     text-align: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 3rem;
+      height: 10vh;
+      justify-content: space-around;
+    }
   }
-  .links__text {
+  .links__footer-text {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 3rem;
+      margin-top: 0;
+    }
   }
-  .links__text li {
+  .links__footer-text li {
     margin: 1rem 0rem;
   }
+
   .links__icons {
     display: flex;
     gap: 1rem;
     align-items: center;
     margin-top: 2rem;
+    @media (min-width: 768px) {
+      margin-top: 0.2rem;
+    }
   }
-  
 }

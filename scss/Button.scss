@@ -3,7 +3,7 @@
 .btn__container {
   width: 0rem;
   margin: 2rem;
-  
+
   .btn__aboutme {
     width: 12.5rem;
     height: 3rem;
@@ -17,6 +17,7 @@
     cursor: pointer;
     transition: background-color 0.5s ease, opacity 0.5s ease;
   }
+  
   .btn__sendmsg {
     width: 12.5rem;
     height: 3rem;
@@ -52,6 +53,10 @@
     font-weight: 100;
     font-size: 12px;
     transition: 0.5s ease;
+    @media(min-width: 768px) {
+      position: absolute;
+      margin-top: -1rem;
+    }
   }
 
   .btn__viewproject {
@@ -97,6 +102,9 @@
 
 .btn__container .btn__contactme {
   margin-left: 1.6rem;
+  @media(min-width: 768px) {
+    margin-left: 0.4rem;
+  }
 }
 .btn__container .btn__sendmsg {
   margin-bottom: 3rem;

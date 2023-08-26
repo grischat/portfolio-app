@@ -1,11 +1,24 @@
+@import "../scss/main.scss";
+
+
 .header__nav {
-    width: 19.5rem; 
-    height: 2rem;  
-    display: flex;
-    position: relative;
-    margin: 2rem;
-    .hamburger-react {
-        bottom: 0.62rem;
-        left: 12.8rem;
-    } 
+  width: 19.5rem;
+  height: 2rem;
+  display: flex;
+  position: relative;
+  margin: 2rem;
+  .menu__container {
+    #link-text {
+      @media (min-width: 768px) {
+        color: black;
+        &:hover {
+          color: $cyan; 
+        }
+      }
+    }
   }
+  .hamburger-react {
+    bottom: 0.62rem;
+    left: 12.8rem;
+  }
+}

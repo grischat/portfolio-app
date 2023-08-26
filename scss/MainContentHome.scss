@@ -1,10 +1,13 @@
-@import '../scss/main.scss';
+@import "../scss/main.scss";
 
 .main__content {
   height: 100%;
-  
+
   .image__homepage {
     margin: 2rem;
+    @media (min-width: 768px) {
+      margin: 2rem 2rem;
+    }
   }
   .image__photo {
     margin: 2rem;
@@ -14,5 +17,42 @@
     font-family: $public-sans;
     line-height: 30px;
   }
-  
+  .header__container {
+    @media (min-width: 768px) {
+      position: absolute;
+      width: 32.1rem;
+      height: 17.3rem;
+      background-color: $primary-background-color;
+      margin-top: -19.5rem;
+      margin-left: 2rem;
+    }
+    .btn__aboutme-container {
+      @media (min-width: 768px) {
+        margin-top: 3.5rem;
+        margin-left: -2rem;
+      }
+    }
+    .header__text-hey {
+      @media (min-width: 768px) {
+        width: 28.6rem;
+        height: 8rem;
+        margin-top: 2.8rem;
+        margin-left: 0rem;
+      }
+    }
+  }
+  .aboutme__container {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .aboutme__container-textWithButton {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      gap: 1rem;
+    }
+  }
 }

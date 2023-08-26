@@ -3,14 +3,18 @@ import "../scss/MainContentHome.scss";
 import "../scss/Button.scss";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import BottomLine from "./BottomLine";
 function Footer({ showContactMe }) {
   return (
     <div>
       {showContactMe && (
         <div className="contactme__container">
-          <h1> Interested in doing a project together?</h1>
+          <h1 className="header__text-interested">
+            Interested in doing a project together?
+          </h1>
+          {window.innerWidth > 768 && <BottomLine className='bottomline-short'/>}
           <Link id="link" to="/contact">
-            <Button showIcon={false} className="btn__contactme">
+            <Button className="btn__contactme">
               CONTACT ME
             </Button>
           </Link>
@@ -22,7 +26,7 @@ function Footer({ showContactMe }) {
             className="white__triangles"
             src="../media/images/logo_white.svg"
           ></img>
-          <ul className="links__text">
+          <ul className="links__footer-text">
             <li>
               <Link to="/">HOME</Link>
             </li>
