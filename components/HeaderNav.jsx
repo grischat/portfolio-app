@@ -25,7 +25,7 @@ function HeaderNav() {
     
     <div className="header__nav">
       
-      <img src="../media/images/logo.svg" alt="Black triangles logo" />
+      <img src="../media/images/logo.svg" alt="Triangles logo" />
       
       {mobileScreen && (
         <>

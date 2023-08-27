@@ -1,5 +1,42 @@
 .project__container {
-    width: 23.46rem;
-    display: flex; 
-    flex-direction: column;
+  width: 23.46rem;
+  display: flex;
+  flex-direction: column;
+}
+//lr = left to right AND rl = right to left
+.project__container-lr {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    width: 43rem;
+    
   }
+  .image__preview-lr {
+    width: 21rem;
+    margin: 1rem;
+    @media (min-width: 768px) {
+      width: 21rem;
+    }
+  }
+  .text__lr {
+    @media (min-width: 768px) {
+      margin-right: -4rem;
+    };
+  }
+}
+.project__container-rl {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 43rem;
+  }
+  .image__preview-rl {
+    width: 21rem;
+    margin:1rem;
+    @media (min-width: 768px) {
+      width: 21rem;
+      
+      margin-right: -2.1rem;
+    }
+  }
+}

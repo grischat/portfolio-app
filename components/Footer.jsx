@@ -12,7 +12,7 @@ function Footer({ showContactMe }) {
           <h1 className="header__text-interested">
             Interested in doing a project together?
           </h1>
-          {window.innerWidth > 768 && <BottomLine className='bottomline-short'/>}
+          {window.innerWidth >= 768 && <BottomLine className='bottomline-short'/>}
           <Link id="link" to="/contact">
             <Button className="btn__contactme">
               CONTACT ME
