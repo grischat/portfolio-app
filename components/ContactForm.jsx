@@ -19,7 +19,7 @@ function ContactForm() {
     <form onSubmit={handleSubmit}>
       <div className="form__container">
         <div className="form__field">
-          <label>Name</label>
+          <label>Name *</label>
           <input placeholder="Your name" id="name" type="text" required={true}></input>
         </div>
         <div className="form__field">

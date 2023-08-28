@@ -2,24 +2,11 @@ import "../scss/Footer.scss";
 import "../scss/MainContentHome.scss";
 import "../scss/Button.scss";
 import { Link } from "react-router-dom";
-import Button from "./Button";
-import BottomLine from "./BottomLine";
-function Footer({ showContactMe }) {
+
+function Footer() {
   return (
     <div>
-      {showContactMe && (
-        <div className="contactme__container">
-          <h1 className="header__text-interested">
-            Interested in doing a project together?
-          </h1>
-          {window.innerWidth >= 768 && <BottomLine className='bottomline-short'/>}
-          <Link id="link" to="/contact">
-            <Button className="btn__contactme">
-              CONTACT ME
-            </Button>
-          </Link>
-        </div>
-      )}
+      
       <div className="footer">
         <div className="footer__content">
           <img

@@ -14,6 +14,8 @@ function MainContentHome() {
     }
   };
   //Changing images due to screen size
+
+  //Homepage (monitor) Image
   const [homepageImgMobile, setHomepageImgMobile] = useState(
     "../media/images/homepage/mobile/image-homepage-hero.jpg"
   );
@@ -21,11 +23,18 @@ function MainContentHome() {
     "../media/images/homepage/tablet/image-homepage-hero.jpg"
   );
 
+  const [homepageImgDesktop, setHomepageImgDesktop] = useState(
+    "../media/images/homepage/desktop/image-homepage-hero.jpg"
+  );
+  // Photo image
   const [photoImgMobile, setPhotoImgMobile] = useState(
     "../media/images/homepage/mobile/image-homepage-profile.jpg"
   );
   const [photoImgTablet, setPhotoImgTablet] = useState(
     "../media/images/homepage/tablet/image-homepage-profile.jpg"
+  );
+  const [photoImgDesktop, setPhotoImgDesktop] = useState(
+    "../media/images/homepage/desktop/image-homepage-profile.jpg"
   );
 
   useEffect(() => {
@@ -44,6 +53,13 @@ function MainContentHome() {
         setPhotoImgTablet(
           "../media/images/homepage/tablet/image-homepage-profile.jpg"
         );
+      } else if (window.innerWidth > 1440) {
+        setHomepageImgDesktop(
+          "../media/images/homepage/desktop/image-homepage-hero.jpg"
+        );
+        setPhotoImgDesktop(
+          "../media/images/homepage/desktop/image-homepage-profile.jpg"
+        );
       }
     };
 
@@ -59,7 +75,13 @@ function MainContentHome() {
     <div className="main__content">
       <img
         className="image__homepage"
-        src={window.innerWidth < 768 ? homepageImgMobile : homepageImgTablet}
+        src={
+          window.innerWidth >= 1440
+            ? homepageImgDesktop
+            : window.innerWidth < 768
+            ? homepageImgMobile
+            : homepageImgTablet
+        }
         alt="Image of monitor with website in it"
       ></img>
       <div className="header__container">
@@ -80,7 +102,13 @@ function MainContentHome() {
       <div className="aboutme__container">
         <img
           className="image__photo"
-          src={window.innerWidth < 768 ? photoImgMobile : photoImgTablet}
+          src={
+            window.innerWidth >= 1440
+            ? photoImgDesktop
+            : window.innerWidth < 768
+            ? photoImgMobile
+            : photoImgTablet
+          }
           alt="My photo"
         />
         <div className="aboutme__container-textWithButton">

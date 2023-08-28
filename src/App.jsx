@@ -4,16 +4,19 @@ import Wrapper from "../components/Wrapper";
 import HeaderNav from "../components/HeaderNav";
 import Footer from "../components/Footer";
 import MainContentHome from "../components/MainContentHome";
-
+import ContactMeFooter from "../components/ContactMeFooter";
 function App() {
   return (
-    <Wrapper>
-      <HeaderNav />
+    <div>
+      <Wrapper>
+        <HeaderNav />
 
-      <MainContentHome />
-
-      <Footer showContactMe={true}/>
-    </Wrapper>
+        <MainContentHome />
+        <ContactMeFooter/>
+      </Wrapper>
+      
+      <Footer showContactMe={true} />
+    </div>
   );
 }
 

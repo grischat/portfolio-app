@@ -15,9 +15,16 @@
   background-color: rgba(151, 151, 151, 0.3);
   border-width: 0px;
   padding-left: 1rem;
+  @media(min-width: 768px) {
+    width: 43rem;
+  }
+  @media(min-width: 1440px) {
+    width: 69rem;
+  }
 }
 .form__field {
   margin-bottom: 2rem;
+  
 }
 
 .form__field label {
@@ -35,6 +42,12 @@
   background-color: rgba(151, 151, 151, 0.3);
   border-width: 0px;
   padding-left: 1rem;
+  @media(min-width: 768px) {
+    width: 43rem;
+  }
+  @media(min-width: 1440px) {
+    width: 69rem;
+  }
 }
 
 .sucess__msg{

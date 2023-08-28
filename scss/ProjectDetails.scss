@@ -21,7 +21,7 @@
 }
 .slider__container {
   margin: 2rem;
-  width: 19.6rem;
+  width: auto;
   height: 9.25rem;
   border-top: 1px solid rgba(151, 151, 151, 0.4);
   border-bottom: 1px solid rgba(151, 151, 151, 0.4);
@@ -71,6 +71,9 @@
   margin-left: 9.8rem;
   width: 9.9rem;
   height: 6.1rem;
+  @media(min-width: 768px) {
+    margin-left: 33rem;
+  }
 }
 .btn__attr {
   position: absolute;

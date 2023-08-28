@@ -53,6 +53,7 @@ function ProjectDetails() {
     <Wrapper>
       <HeaderNav />
       <div className="project__container">
+        <BottomLine/>
         <h1 className="project__header">{project.title}</h1>
         <img
           className="project__image"
@@ -94,7 +95,7 @@ function ProjectDetails() {
         </div>
       </div>
 
-      <Footer showContactMe={true} />
+      <Footer/>
     </Wrapper>
   );
 }

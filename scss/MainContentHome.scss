@@ -54,5 +54,8 @@
       margin-top: 2rem;
       gap: 1rem;
     }
+    @media(min-width: 1440px) {
+      gap: 2rem;
+    }
   }
 }

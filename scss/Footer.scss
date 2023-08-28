@@ -14,6 +14,7 @@
       margin: 0;
     }
   }
+  
 }
 
 .footer {
@@ -44,6 +45,9 @@
       flex-direction: row;
       gap: 3rem;
       margin-top: 0;
+    }
+    @media(min-width: 1440px) {
+      gap: 5rem
     }
   }
   .links__footer-text li {

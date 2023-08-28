@@ -23,6 +23,9 @@
     gap: 4rem;
     animation: fadeInUp 0.5s ease both;
   }
+  @media(min-width: 1440px) {
+    margin-left: 46rem;
+  }
 }
 
 @keyframes fadeInUp {
