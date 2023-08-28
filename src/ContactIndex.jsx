@@ -55,7 +55,7 @@ function Contact() {
         <h1>Contact Me</h1>
         <ContactForm />
       </Wrapper>
-      <Footer showContactMe={false} />
+      <Footer/>
     </div>
   );
 }

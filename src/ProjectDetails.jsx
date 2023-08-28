@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 import "swiper/scss/navigation";
-
+import ContactForm from "../components/ContactForm";
 import BottomLine from "../components/BottomLine";
 import Button from "../components/Button";
 import Wrapper from "../components/Wrapper";
@@ -11,6 +11,7 @@ import HeaderNav from "../components/HeaderNav";
 import Footer from "../components/Footer";
 import "../scss/ProjectDetails.scss";
 import "../scss/main.scss";
+import ContactMeFooter from "../components/ContactMeFooter";
 
 function ProjectDetails() {
   const { projectId } = useParams();
@@ -50,6 +51,7 @@ function ProjectDetails() {
   }
 
   return (
+    <div>
     <Wrapper>
       <HeaderNav />
       <div className="project__container">
@@ -95,8 +97,10 @@ function ProjectDetails() {
         </div>
       </div>
 
-      <Footer/>
+    <ContactMeFooter/>  
     </Wrapper>
+    <Footer/>
+    </div>
   );
 }
 
