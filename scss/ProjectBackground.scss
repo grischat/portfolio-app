@@ -1,5 +1,3 @@
-
-
 .project__container {
   width: auto;
   display: flex;
@@ -7,26 +5,48 @@
 }
 //lr = left to right AND rl = right to left
 .project__container-lr {
+  
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     width: 43rem;
-    
   }
+  
   .image__preview-lr {
     width: 21rem;
     margin: 1rem;
     @media (min-width: 768px) {
       width: 21rem;
     }
+    @media (min-width: 1440px) {
+      margin-top: -1rem;
+
+      width: 32rem;
+    }
   }
   .text__lr {
     @media (min-width: 768px) {
       margin-right: -4rem;
-    };
+    }
+    @media (min-width: 1440px) {
+      margin-right: -24rem;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 .project__container-rl {
+  @media (min-width: 1440px) {
+    margin-left: 47rem;
+    width: 43rem;
+  }
+  .text__rl {
+    @media (min-width: 1440px) {
+      display: flex;
+      margin-left: -24rem;
+      flex-direction: column;
+    }
+  }
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
@@ -34,11 +54,17 @@
   }
   .image__preview-rl {
     width: 21rem;
-    margin:1rem;
+    margin: 1rem;
+    
     @media (min-width: 768px) {
       width: 21rem;
-      
       margin-right: -2.1rem;
+    }
+    @media (min-width: 1440px) {
+      width: 32rem;
+      margin-top: -1rem;
+      
+      margin-right: 0;
     }
   }
 }

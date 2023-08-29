@@ -22,6 +22,7 @@ function PortfolioIndex() {
           <ProjectBackground
             containerClass="project__container-rl"
             imageClass="image__preview-rl"
+            textClass="text__rl"
             url="githubsearch"
             imageSrc="../media/previews/github-search-user-preview.jpg"
             title="GitHub User search"
