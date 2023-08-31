@@ -47,6 +47,7 @@
   font-weight: 300;
   text-align: left;
   color: black;
+  transition: 0.5s ease;
 }
 .btn__next {
   cursor: pointer;
@@ -60,6 +61,10 @@
   font-size: 2rem;
   font-weight: 300;
   color: black;
+  transition: 0.5s ease;
+}
+.btn__next:hover, .btn__prev:hover {
+  color:$cyan;
 }
 
 .prev__container {

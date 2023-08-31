@@ -1,9 +1,7 @@
 import projectsData from "../data/projects.json";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-
 import "swiper/scss/navigation";
-import ContactForm from "../components/ContactForm";
 import BottomLine from "../components/BottomLine";
 import Button from "../components/Button";
 import Wrapper from "../components/Wrapper";
