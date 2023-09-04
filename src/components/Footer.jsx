@@ -6,13 +6,12 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div>
-      
       <div className="footer">
         <div className="footer__content">
           <img
             className="white__triangles"
             src="../media/images/logo_white.svg"
-          ></img>
+          />
           <ul className="links__footer-text">
             <li>
               <Link to="/">HOME</Link>
@@ -33,7 +32,7 @@ function Footer() {
                 <img
                   src="../media/images/icons/github-white.svg"
                   alt="github icon"
-                ></img>
+                />
               </a>
             </li>
             <li>
@@ -41,7 +40,7 @@ function Footer() {
                 <img
                   src="../media/images/icons/twitter-white.svg"
                   alt="twitter icon"
-                ></img>
+                />
               </a>
             </li>
             <li>
@@ -52,7 +51,7 @@ function Footer() {
                 <img
                   src="../media/images/icons/linkedin-white.svg"
                   alt="linkedin icon"
-                ></img>
+                />
               </a>
             </li>
           </ul>

@@ -25,18 +25,12 @@ function Contact() {
         <ul className="links__icons-contact-page">
           <li>
             <a href="https://github.com/grischat" target="_blank">
-              <img
-                src="../media/images/icons/github.svg"
-                alt="github icon"
-              ></img>
+              <img src="../media/images/icons/github.svg" alt="github icon" />
             </a>
           </li>
           <li>
             <a href="https://twitter.com/KosolapH" target="_blank">
-              <img
-                src="../media/images/icons/twitter.svg"
-                alt="twitter icon"
-              ></img>
+              <img src="../media/images/icons/twitter.svg" alt="twitter icon" />
             </a>
           </li>
           <li>
@@ -47,7 +41,7 @@ function Contact() {
               <img
                 src="../media/images/icons/linkedin.svg"
                 alt="linkedin icon"
-              ></img>
+              />
             </a>
           </li>
         </ul>
@@ -55,7 +49,7 @@ function Contact() {
         <h1>Contact Me</h1>
         <ContactForm />
       </Wrapper>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

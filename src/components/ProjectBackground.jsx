@@ -10,16 +10,12 @@ function ProjectBackground({
   description,
   url,
   containerClass = "project__container",
-  imageClass='image__preview',
-  textClass ='project__text'
+  imageClass = "image__preview",
+  textClass = "project__text",
 }) {
   return (
     <div className={containerClass}>
-      <img
-        className={imageClass}
-        src={imageSrc}
-        alt={`Preview for ${title}`}
-      ></img>
+      <img className={imageClass} src={imageSrc} alt={`Preview for ${title}`} />
       <div className={textClass}>
         <BottomLine />
         <h1>{title}</h1>
@@ -27,7 +23,6 @@ function ProjectBackground({
         <Link to={`/portfolio/${url}`}>
           <Button className="btn__viewproject">VIEW PROJECT</Button>
         </Link>
-
         <BottomLine />
       </div>
     </div>
