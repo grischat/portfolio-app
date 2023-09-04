@@ -5,14 +5,8 @@ import { useState, useEffect } from "react";
 import "../scss/main.scss";
 import "../scss/Button.scss";
 import { Link } from "react-router-dom";
+
 function MainContentHome() {
-  const scrollToTarget = () => {
-    //Scroll to the About Me section
-    const targetElement = document.getElementById("aboutme");
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   //Changing images due to screen size
 
   //Homepage (monitor) Image
@@ -89,11 +83,7 @@ function MainContentHome() {
           Hey, my name is Hryhorii Kosolap and I am front-end developer{" "}
         </h1>
         <div className="btn__aboutme-container">
-          <Button
-            showIcon={true}
-            className="btn__aboutme"
-            onClick={scrollToTarget}
-          >
+          <Button showIcon={true} className="btn__aboutme">
             ABOUT ME
           </Button>
         </div>
@@ -104,10 +94,10 @@ function MainContentHome() {
           className="image__photo"
           src={
             window.innerWidth >= 1440
-            ? photoImgDesktop
-            : window.innerWidth < 768
-            ? photoImgMobile
-            : photoImgTablet
+              ? photoImgDesktop
+              : window.innerWidth < 768
+              ? photoImgMobile
+              : photoImgTablet
           }
           alt="My photo"
         />

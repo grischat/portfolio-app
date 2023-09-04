@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pod",
+    "title": "POD",
+    "shortDescription": "POD is a responsive landing page created using vanilla JavaScript, HTML, and SCSS. It boasts interactive elements with hover states, error messages for form submissions, and dynamic manipulation of the Document Object Model (DOM).",
+    "fullDescription": "In the POD project, I built a landing page that showcases my skills in web development using fundamental technologies like JavaScript, HTML, and SCSS. The project's main highlights include its responsiveness to various screen sizes and its sleek hover states for interactive elements, creating an engaging user experience. Additionally, I implemented error handling for the form submission, ensuring that users receive feedback when trying to submit incomplete or incorrect information.\n\nOne of the technical achievements in this project was the manipulation of the Document Object Model (DOM). I practiced adding, deleting, and replacing elements within the DOM, enhancing my understanding of JavaScript's role in creating dynamic web content. This project was a valuable learning experience, helping me gain proficiency in front-end development and user interface design.",
+    "technologies": "HTML/CSS/JS",
+    "preview": "../media/previews/pod-preview.jpg"
+  },
+  {
+    "id": "githubsearch",
+    "title": "GitHub",
+    "shortDescription": "GitHubSearch is a web application developed with vanilla JavaScript, HTML, and SCSS, enabling users to search for GitHub accounts and view concise user summaries. It features responsive design, hover states, and integration with the GitHub API.",
+    "fullDescription": "The GitHubSearch app is a practical web application that allows users to search for GitHub accounts using their usernames. Built using vanilla JavaScript, HTML, and SCSS, this project emphasizes responsive web design, ensuring that the app looks and works seamlessly on various screen sizes.\n\nOne of the project's key features is the implementation of hover states for all interactive elements, providing users with visual feedback as they navigate the app. Leveraging the GitHub API, I enabled users to search for GitHub users by username and fetch relevant information about the users, offering a convenient way to access GitHub profiles and summaries.\n\nDeveloping this application improved my skills in working with APIs and reinforced my knowledge of front-end web development techniques. It also highlighted the importance of creating user-friendly interfaces that respond well to user interactions.",
+    "technologies": "HTML/SCSS/JS/API",
+    "preview": "../media/previews/github-search-user-preview.jpg"
+  },
+  {
+    "id": "portfolioapp",
+    "title": "Portfolio",
+    "shortDescription": "Portfolio is a multi-page personal website and portfolio built using React with Vite, HTML, and SCSS. It showcases my web development skills, features responsive design, smooth scrolling, form validation, and incorporates various React fundamentals and libraries.",
+    "fullDescription": "The Portfolio app represents a significant step in my web development journey, as it marks my transition to using React and Vite for building a web applications. This Single Page Application (SPA) showcases my projects and skills while offering an engaging user experience.\n\nSome of the notable features of this project include responsive layout design for each page, hover states for interactive elements, and smooth scrolling that activates when users click the 'About Me' call-to-action. The app also implements form validation, ensuring that users receive error messages when trying to submit the contact form without providing essential information such as email and name.\n\nIn terms of technology, this project served as my introduction to React, where I learned and applied key concepts such as components, props, and hooks (including useState and useEffect). I also developed a custom hook called ScrollToTheTop for enhanced user experience. Additionally, I incorporated the react-router-dom library to create a full SPA with smooth navigation between different sections of the site.\n\nOne of the project's unique features is the integration of a third-party library for the contact form, enhancing user interaction and making it easier for visitors to get in touch with me. I also implemented a slider to showcase my projects, demonstrating my improved CSS skills and understanding of web design principles.\n\nIn summary, the Portfolio app represents a milestone in my web development journey, combining responsive design, React fundamentals, and practical user interface features to create a dynamic and engaging personal website and portfolio.",
+    "technologies": "HTML/SCSS/JS/React",
+    "preview": "../media/previews/portfolio-preview.jpg"
+  }
+]

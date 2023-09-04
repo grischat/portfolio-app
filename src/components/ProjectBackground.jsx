@@ -1,5 +1,5 @@
-import BottomLine from "../components/BottomLine";
-import Button from "../components/Button";
+import BottomLine from "./BottomLine";
+import Button from "./Button";
 import "../scss/PortfolioIndex.scss";
 import "../scss/ProjectBackground.scss";
 import { Link } from "react-router-dom";

@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App.jsx";
-import PortfolioIndex from "./PortfolioIndex.jsx";
-import Contact from "./ContactIndex.jsx";
-import ScrollToTop from "../components/ScrollToTheTop.jsx";
+import PortfolioIndex from "./pages/PortfolioIndex.jsx";
+import Contact from "./pages/ContactIndex.jsx";
+import ScrollToTop from "./hooks/ScrollToTheTop.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ProjectDetails from "./ProjectDetails.jsx";
+import ProjectDetails from "./pages/ProjectDetails.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
