@@ -37,6 +37,15 @@ function PortfolioIndex() {
             title={projectsData[2].title}
             description={projectsData[2].shortDescription}
           />
+          <ProjectBackground
+            containerClass="project__container-rl"
+            imageClass="image__preview-rl"
+            textClass="text__rl"
+            url="passwordapp"
+            imageSrc="../media/previews/password-preview.jpg"
+            title={projectsData[3].title}
+            description={projectsData[3].shortDescription}
+          />
         </div>
         <ContactMeFooter/>
       </Wrapper>

@@ -22,5 +22,13 @@
     "fullDescription": "The Portfolio app represents a significant step in my web development journey, as it marks my transition to using React and Vite for building a web applications. This Single Page Application (SPA) showcases my projects and skills while offering an engaging user experience.\n\nSome of the notable features of this project include responsive layout design for each page, hover states for interactive elements, and smooth scrolling that activates when users click the 'About Me' call-to-action. The app also implements form validation, ensuring that users receive error messages when trying to submit the contact form without providing essential information such as email and name.\n\nIn terms of technology, this project served as my introduction to React, where I learned and applied key concepts such as components, props, and hooks (including useState and useEffect). I also developed a custom hook called ScrollToTheTop for enhanced user experience. Additionally, I incorporated the react-router-dom library to create a full SPA with smooth navigation between different sections of the site.\n\nOne of the project's unique features is the integration of a third-party library for the contact form, enhancing user interaction and making it easier for visitors to get in touch with me. I also implemented a slider to showcase my projects, demonstrating my improved CSS skills and understanding of web design principles.\n\nIn summary, the Portfolio app represents a milestone in my web development journey, combining responsive design, React fundamentals, and practical user interface features to create a dynamic and engaging personal website and portfolio.",
     "technologies": "HTML/SCSS/JS/React",
     "preview": "../media/previews/portfolio-preview.jpg"
+  },
+  {
+    "id": "passwordapp",
+    "title": "Password",
+    "shortDescription": "The password generator app that allows users to generate a password based on the selected inclusion options. The app also displays a strength rating for the generated password. The app is built with React and JS/HTML/SCSS.",
+    "fullDescription": "The app is a useful tool for users who want to generate strong and secure passwords. It was also a good way to practice and summarize my skills in React and JS/HTML/CSS. I`ve learned a lot about such hook as useState and get used to transfer component states from one to another ",
+    "technologies": "HTML/SCSS/JS/React",
+    "preview": "../media/previews/password-preview.jpg"
   }
 ]
