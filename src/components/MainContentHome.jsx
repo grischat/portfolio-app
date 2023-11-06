@@ -6,7 +6,7 @@ import "../scss/main.scss";
 import "../scss/Button.scss";
 import { Link } from "react-router-dom";
 
-function MainContentHome() {
+function MainContentHome() { 
   //Changing images due to screen size
 
   //Homepage (monitor) Image

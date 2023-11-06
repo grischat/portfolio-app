@@ -1,5 +1,5 @@
 import "../scss/HeaderNav.scss";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Squash as Hamburger } from 'hamburger-react'
 import Menu from "./Menu";
 function HeaderNav() {
@@ -8,8 +8,7 @@ function HeaderNav() {
 
   function toggleMenu() {
     setOpen(!isOpen);
-  };
-
+  }
   useEffect(() => {
     
     const handleResize = () => {
