@@ -1,4 +1,3 @@
-import React from "react";
 import "./scss/main.scss";
 import Wrapper from "./components/Wrapper";
 import HeaderNav from "./components/HeaderNav";
@@ -12,9 +11,9 @@ function App() {
         <HeaderNav />
 
         <MainContentHome />
-        <ContactMeFooter/>
+        <ContactMeFooter />
       </Wrapper>
-      
+
       <Footer showContactMe={true} />
     </div>
   );

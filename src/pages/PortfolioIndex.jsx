@@ -11,31 +11,22 @@ function PortfolioIndex() {
         <HeaderNav />
         <div className="projects">
           <ProjectBackground
-            containerClass="project__container-lr"
-            imageClass="image__preview-lr"
-            textClass="text__lr"
-            url="pod"
-            imageSrc="../media/previews/pod-preview.jpg"
-            title={projectsData[0].title}
-            description={projectsData[0].shortDescription}
-          />
-          <ProjectBackground
             containerClass="project__container-rl"
             imageClass="image__preview-rl"
             textClass="text__rl"
-            url="githubsearch"
-            imageSrc="../media/previews/github-search-user-preview.jpg"
-            title={projectsData[1].title}
-            description={projectsData[1].shortDescription}
+            url="dine"
+            imageSrc="../media/previews/dine-preview.jpg"
+            title={projectsData[5].title}
+            description={projectsData[5].shortDescription}
           />
           <ProjectBackground
             containerClass="project__container-lr"
             imageClass="image__preview-lr"
             textClass="text__lr"
-            url="portfolioapp"
-            imageSrc="../media/previews/portfolio-preview.jpg"
-            title={projectsData[2].title}
-            description={projectsData[2].shortDescription}
+            url="dictionaryapp"
+            imageSrc="../media/previews/dictionary-preview.jpg"
+            title={projectsData[4].title}
+            description={projectsData[4].shortDescription}
           />
           <ProjectBackground
             containerClass="project__container-rl"
@@ -50,15 +41,36 @@ function PortfolioIndex() {
             containerClass="project__container-lr"
             imageClass="image__preview-lr"
             textClass="text__lr"
-            url="dictionaryapp"
-            imageSrc="../media/previews/dictionary-preview.jpg"
-            title={projectsData[4].title}
-            description={projectsData[4].shortDescription}
+            url="portfolioapp"
+            imageSrc="../media/previews/portfolio-preview.jpg"
+            title={projectsData[2].title}
+            description={projectsData[2].shortDescription}
           />
+          
+          <ProjectBackground
+            containerClass="project__container-rl"
+            imageClass="image__preview-rl"
+            textClass="text__rl"
+            url="githubsearch"
+            imageSrc="../media/previews/github-search-user-preview.jpg"
+            title={projectsData[1].title}
+            description={projectsData[1].shortDescription}
+          />
+          <ProjectBackground
+            containerClass="project__container-lr"
+            imageClass="image__preview-lr"
+            textClass="text__lr"
+            url="pod"
+            imageSrc="../media/previews/pod-preview.jpg"
+            title={projectsData[0].title}
+            description={projectsData[0].shortDescription}
+          />
+          
         </div>
-        <ContactMeFooter/>
+
+        <ContactMeFooter />
       </Wrapper>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
