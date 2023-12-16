@@ -5,7 +5,7 @@ function Menu() {
     <div>
       <ul className="menu__container">
         <li>
-          <Link id="link-text" to="/">
+          <Link id="link-text" to="/portfolio-app">
             HOME
           </Link>
         </li>

@@ -14,7 +14,7 @@ function Footer() {
           />
           <ul className="links__footer-text">
             <li>
-              <Link to="/">HOME</Link>
+              <Link to="/home">HOME</Link>
             </li>
             <li>
               <Link to="/portfolio" preventScrollReset={true}>
