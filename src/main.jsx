@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <main>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<App />}></Route>
+          <Route path="/portfolio-app" element={<App />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/portfolio" element={<PortfolioIndex />}></Route>
           <Route path="/portfolio/:projectId" element={<ProjectDetails/>} />
