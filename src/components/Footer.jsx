@@ -14,15 +14,15 @@ function Footer() {
           <img className="white__triangles" src={logo} />
           <ul className="links__footer-text">
             <li>
-              <Link to="/home">HOME</Link>
+              <Link to="/portfolio-app">HOME</Link>
             </li>
             <li>
-              <Link to="/portfolio" preventScrollReset={true}>
+              <Link to="/portfolio-app/portfolio" preventScrollReset={true}>
                 PORTFOLIO
               </Link>
             </li>
             <li>
-              <Link to="/contact">CONTACT ME</Link>
+              <Link to="/portfolio-app/contact">CONTACT ME</Link>
             </li>
           </ul>
 

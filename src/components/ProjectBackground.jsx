@@ -20,7 +20,7 @@ function ProjectBackground({
         <BottomLine />
         <h1>{title}</h1>
         <p>{description}</p>
-        <Link to={`/portfolio/${url}`}>
+        <Link to={`${url}`}>
           <Button className="btn__viewproject">VIEW PROJECT</Button>
         </Link>
         <BottomLine />

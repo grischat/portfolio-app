@@ -97,7 +97,7 @@ function MainContentHome() {
             you`ll find me in a boxing gym. Boxing helps me to clear my mind and
             get an inner strength.
           </p>
-          <Link id="link" to="/portfolio">
+          <Link id="link" to="/portfolio-app/portfolio">
             <Button className="btn__goto">GO TO PORTFOLIO</Button>
           </Link>
           <BottomLine />

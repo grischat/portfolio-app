@@ -10,12 +10,12 @@ function Menu() {
           </Link>
         </li>
         <li>
-          <Link id="link-text" to="/portfolio">
+          <Link id="link-text" to="/portfolio-app/portfolio">
             PORTFOLIO
           </Link>
         </li>
         <li>
-          <Link id="link-text" to="/contact">
+          <Link id="link-text" to="/portfolio-app/contact">
             CONTACT ME
           </Link>
         </li>

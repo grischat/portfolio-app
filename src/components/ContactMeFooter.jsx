@@ -14,7 +14,7 @@ function ContactMeFooter() {
         {window.innerWidth >= 768 && (
           <BottomLine className="bottomline-short" />
         )}
-        <Link id="link" to="/contact">
+        <Link id="link" to="/portfolio-app/contact">
           <Button className="btn__contactme">CONTACT ME</Button>
         </Link>
       </div>

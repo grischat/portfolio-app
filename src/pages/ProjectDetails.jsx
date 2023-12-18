@@ -28,6 +28,7 @@ function ProjectDetails() {
     dine: dinePreview,
   };
   const { projectId } = useParams();
+  
   const projectIndex = projectsData.findIndex(
     (project) => project.id === projectId
   );
@@ -51,7 +52,7 @@ function ProjectDetails() {
   const nextProjectIndex = (currentProjectIndex + 1) % totalProjects;
   useEffect(() => {
     const newProjectId = projectsData[currentProjectIndex].id;
-    navigate(`/portfolio/${newProjectId}`);
+    navigate(`/portfolio-app/portfolio/${newProjectId}`);
   }, [currentProjectIndex, navigate]); //Note for me: Here we are changing the link to the next/prev project. We defining a function of navigation (react-router-dom function) and make dependencie between state changing and navigation func
   const project = projectsData[currentProjectIndex];
   if (!project) {

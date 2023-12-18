@@ -5,12 +5,12 @@ import ProjectBackground from "../components/ProjectBackground";
 import ContactMeFooter from "../components/ContactMeFooter";
 import projectsData from "../data/projects.json";
 //images import
-import dineProjectPreview from '../media/previews/dine-preview.jpg'
-import dictionaryProjectPreview from '../media/previews/dictionary-preview.jpg'
-import passwordProjectPreview from '../media/previews/password-preview.jpg'
-import portfolioProjectPreview from '../media/previews/portfolio-preview.jpg'
-import githubProjectPreview from '../media/previews/github-search-user-preview.jpg'
-import podProjectPreview from '../media/previews/pod-preview.jpg'
+import dineProjectPreview from "../media/previews/dine-preview.jpg";
+import dictionaryProjectPreview from "../media/previews/dictionary-preview.jpg";
+import passwordProjectPreview from "../media/previews/password-preview.jpg";
+import portfolioProjectPreview from "../media/previews/portfolio-preview.jpg";
+import githubProjectPreview from "../media/previews/github-search-user-preview.jpg";
+import podProjectPreview from "../media/previews/pod-preview.jpg";
 function PortfolioIndex() {
   return (
     <div>
@@ -53,7 +53,7 @@ function PortfolioIndex() {
             title={projectsData[2].title}
             description={projectsData[2].shortDescription}
           />
-          
+
           <ProjectBackground
             containerClass="project__container-rl"
             imageClass="image__preview-rl"
@@ -72,7 +72,6 @@ function PortfolioIndex() {
             title={projectsData[0].title}
             description={projectsData[0].shortDescription}
           />
-          
         </div>
 
         <ContactMeFooter />

@@ -8,14 +8,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjectDetails from "./pages/ProjectDetails.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter >
+    <BrowserRouter>
       <main>
         <ScrollToTop />
         <Routes>
-          <Route path="/portfolio-app" element={<App />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/portfolio" element={<PortfolioIndex />}></Route>
-          <Route path="/portfolio/:projectId" element={<ProjectDetails/>} />
+          <Route path="/portfolio-app" element={<App />} />
+          <Route path="/portfolio-app/contact" element={<Contact />} />
+          <Route path="/portfolio-app/portfolio" element={<PortfolioIndex />} />
+          <Route
+            path="/portfolio-app/portfolio/:projectId"
+            element={<ProjectDetails />}
+          />
         </Routes>
       </main>
     </BrowserRouter>
