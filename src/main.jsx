@@ -4,14 +4,14 @@ import App from "./App.jsx";
 import PortfolioIndex from "./pages/PortfolioIndex.jsx";
 import Contact from "./pages/ContactIndex.jsx";
 import ScrollToTop from "./hooks/ScrollToTheTop.jsx";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import ProjectDetails from "./pages/ProjectDetails.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
       <main>
         <ScrollToTop />
-        <Routes basename="/portfolio-app">
+        <Routes>
           <Route path="/portfolio-app" element={<App />} />
           <Route path="/portfolio-app/contact" element={<Contact />} />
           <Route path="/portfolio-app/portfolio" element={<PortfolioIndex />} />
@@ -19,9 +19,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             path="/portfolio-app/portfolio/:projectId"
             element={<ProjectDetails />}
           />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/portfolio-app" />} />
         </Routes>
       </main>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
