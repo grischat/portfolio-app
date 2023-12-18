@@ -1,6 +1,7 @@
 import "../scss/HeaderNav.scss";
 import { useState, useEffect } from "react";
 import { Squash as Hamburger } from 'hamburger-react'
+import logoImg from '../media/images/logo.svg'
 import Menu from "./Menu";
 function HeaderNav() {
   const [isOpen, setOpen] = useState(false);
@@ -24,7 +25,7 @@ function HeaderNav() {
     
     <div className="header__nav">
       
-      <img src="../media/images/logo.svg" alt="Triangles logo" />
+      <img src={logoImg} alt="Triangles logo" />
       
       {mobileScreen && (
         <>

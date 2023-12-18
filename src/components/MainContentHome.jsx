@@ -5,55 +5,39 @@ import { useState, useEffect } from "react";
 import "../scss/main.scss";
 import "../scss/Button.scss";
 import { Link } from "react-router-dom";
-
-function MainContentHome() { 
+import mobileHomepageHero from "../media/images/homepage/mobile/image-homepage-hero.jpg";
+import tabletHomepageHero from "../media/images/homepage/tablet/image-homepage-hero.jpg";
+import desktopHomepageHero from "../media/images/homepage/desktop/image-homepage-hero.jpg";
+import mobilePhotoHero from "../media/images/homepage/mobile/image-homepage-profile.jpg";
+import tabletPhotoHero from "../media/images/homepage/tablet/image-homepage-profile.jpg";
+import desktopPhotoHero from "../media/images/homepage/desktop/image-homepage-profile.jpg";
+function MainContentHome() {
   //Changing images due to screen size
 
   //Homepage (monitor) Image
-  const [homepageImgMobile, setHomepageImgMobile] = useState(
-    "../media/images/homepage/mobile/image-homepage-hero.jpg"
-  );
-  const [homepageImgTablet, setHomepageImgTablet] = useState(
-    "../media/images/homepage/tablet/image-homepage-hero.jpg"
-  );
+  const [homepageImgMobile, setHomepageImgMobile] =
+    useState(mobileHomepageHero);
+  const [homepageImgTablet, setHomepageImgTablet] =
+    useState(tabletHomepageHero);
 
-  const [homepageImgDesktop, setHomepageImgDesktop] = useState(
-    "../media/images/homepage/desktop/image-homepage-hero.jpg"
-  );
+  const [homepageImgDesktop, setHomepageImgDesktop] =
+    useState(desktopHomepageHero);
   // Photo image
-  const [photoImgMobile, setPhotoImgMobile] = useState(
-    "../media/images/homepage/mobile/image-homepage-profile.jpg"
-  );
-  const [photoImgTablet, setPhotoImgTablet] = useState(
-    "../media/images/homepage/tablet/image-homepage-profile.jpg"
-  );
-  const [photoImgDesktop, setPhotoImgDesktop] = useState(
-    "../media/images/homepage/desktop/image-homepage-profile.jpg"
-  );
+  const [photoImgMobile, setPhotoImgMobile] = useState(mobilePhotoHero);
+  const [photoImgTablet, setPhotoImgTablet] = useState(tabletPhotoHero);
+  const [photoImgDesktop, setPhotoImgDesktop] = useState(desktopPhotoHero);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setHomepageImgMobile(
-          "../media/images/homepage/mobile/image-homepage-hero.jpg"
-        );
-        setPhotoImgMobile(
-          "../media/images/homepage/mobile/image-homepage-profile.jpg"
-        );
+        setHomepageImgMobile(mobileHomepageHero);
+        setPhotoImgMobile(mobilePhotoHero);
       } else if (window.innerWidth > 768) {
-        setHomepageImgTablet(
-          "../media/images/homepage/tablet/image-homepage-hero.jpg"
-        );
-        setPhotoImgTablet(
-          "../media/images/homepage/tablet/image-homepage-profile.jpg"
-        );
+        setHomepageImgTablet(tabletHomepageHero);
+        setPhotoImgTablet(tabletPhotoHero);
       } else if (window.innerWidth > 1440) {
-        setHomepageImgDesktop(
-          "../media/images/homepage/desktop/image-homepage-hero.jpg"
-        );
-        setPhotoImgDesktop(
-          "../media/images/homepage/desktop/image-homepage-profile.jpg"
-        );
+        setHomepageImgDesktop(desktopHomepageHero);
+        setPhotoImgDesktop(desktopPhotoHero);
       }
     };
 
