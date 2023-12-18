@@ -1,6 +1,7 @@
 import "../scss/MainContentHome.scss";
 import Button from "./Button";
 import BottomLine from "./BottomLine";
+import useWindowResize from "../hooks/useWindowResize";
 import { useState, useEffect } from "react";
 import "../scss/main.scss";
 import "../scss/Button.scss";
@@ -12,53 +13,57 @@ import mobilePhotoHero from "../media/images/homepage/mobile/image-homepage-prof
 import tabletPhotoHero from "../media/images/homepage/tablet/image-homepage-profile.jpg";
 import desktopPhotoHero from "../media/images/homepage/desktop/image-homepage-profile.jpg";
 function MainContentHome() {
-  
+  // //Homepage (monitor) Image
+  // const [homepageImgMobile, setHomepageImgMobile] =
+  //   useState(mobileHomepageHero);
+  // const [homepageImgTablet, setHomepageImgTablet] =
+  //   useState(tabletHomepageHero);
+  // const [homepageImgDesktop, setHomepageImgDesktop] =
+  //   useState(desktopHomepageHero);
+  // // Photo image
+  // const [photoImgMobile, setPhotoImgMobile] = useState(mobilePhotoHero);
+  // const [photoImgTablet, setPhotoImgTablet] = useState(tabletPhotoHero);
+  // const [photoImgDesktop, setPhotoImgDesktop] = useState(desktopPhotoHero);
 
-  //Homepage (monitor) Image
-  const [homepageImgMobile, setHomepageImgMobile] =
-    useState(mobileHomepageHero);
-  const [homepageImgTablet, setHomepageImgTablet] =
-    useState(tabletHomepageHero);
-  const [homepageImgDesktop, setHomepageImgDesktop] =
-    useState(desktopHomepageHero);
-  // Photo image
-  const [photoImgMobile, setPhotoImgMobile] = useState(mobilePhotoHero);
-  const [photoImgTablet, setPhotoImgTablet] = useState(tabletPhotoHero);
-  const [photoImgDesktop, setPhotoImgDesktop] = useState(desktopPhotoHero);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 768) {
+  //       setHomepageImgMobile(mobileHomepageHero);
+  //       setPhotoImgMobile(mobilePhotoHero);
+  //     } else if (window.innerWidth > 768) {
+  //       setHomepageImgTablet(tabletHomepageHero);
+  //       setPhotoImgTablet(tabletPhotoHero);
+  //     } else if (window.innerWidth > 1440) {
+  //       setHomepageImgDesktop(desktopHomepageHero);
+  //       setPhotoImgDesktop(desktopPhotoHero);
+  //     }
+  //   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setHomepageImgMobile(mobileHomepageHero);
-        setPhotoImgMobile(mobilePhotoHero);
-      } else if (window.innerWidth > 768) {
-        setHomepageImgTablet(tabletHomepageHero);
-        setPhotoImgTablet(tabletPhotoHero);
-      } else if (window.innerWidth > 1440) {
-        setHomepageImgDesktop(desktopHomepageHero);
-        setPhotoImgDesktop(desktopPhotoHero);
-      }
-    };
+  //   window.addEventListener("resize", handleResize);
 
-    window.addEventListener("resize", handleResize);
+  //   handleResize();
 
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
+  const homepage = {
+    mobileHomepage: mobileHomepageHero,
+    tabletHomepage: tabletHomepageHero,
+    desktopHomepage: desktopHomepageHero,
+  };
+  const photo = {
+    mobilePhoto: mobilePhotoHero,
+    tabletPhoto: tabletPhotoHero,
+    desktopPhoto: desktopPhotoHero,
+  };
+  const images = useWindowResize( homepage, photo );
+  console.log(homepage)
   return (
     <div className="main__content">
       <img
         className="image__homepage"
-        src={
-          window.innerWidth >= 1440
-            ? homepageImgDesktop
-            : window.innerWidth < 768
-            ? homepageImgMobile
-            : homepageImgTablet
-        }
+        src={images.homepage.setHomepageImg}
         alt="Image of monitor with website in it"
       ></img>
       <div className="header__container">
@@ -76,11 +81,7 @@ function MainContentHome() {
         <img
           className="image__photo"
           src={
-            window.innerWidth >= 1440
-              ? photoImgDesktop
-              : window.innerWidth < 768
-              ? photoImgMobile
-              : photoImgTablet
+            images.photo.setPhotoImg
           }
           alt="My photo"
         />
