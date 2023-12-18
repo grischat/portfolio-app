@@ -1,5 +1,5 @@
 import "../scss/Button.scss";
-
+import downArrowsIcon from "../media/images/icons/down-arrows-default.svg";
 function Button({ showIcon, className, children }) {
   const scrollToTarget = () => {
     //Scroll to the About Me section
@@ -10,21 +10,19 @@ function Button({ showIcon, className, children }) {
   };
   return (
     <div className="btn__container">
-      
-        {showIcon && (
-          <div className="triangle__icon" onClick={scrollToTarget}>
-            <img
-              className="icon__image"
-              src="../media/images/icons/down-arrows-default.svg"
-              alt="Triangle Icon"
-            />
-          </div>
-        )}
+      {showIcon && (
+        <div className="triangle__icon" onClick={scrollToTarget}>
+          <img
+            className="icon__image"
+            src={downArrowsIcon}
+            alt="Triangle Icon"
+          />
+        </div>
+      )}
 
-        <button className={className} onClick={scrollToTarget}>
-          {children}
-        </button>
-      
+      <button className={className} onClick={scrollToTarget}>
+        {children}
+      </button>
     </div>
   );
 }

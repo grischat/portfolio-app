@@ -4,47 +4,43 @@
     "title": "POD",
     "shortDescription": "POD is a responsive landing page created using vanilla JavaScript, HTML, and SCSS. It boasts interactive elements with hover states, error messages for form submissions, and dynamic manipulation of the Document Object Model (DOM).",
     "fullDescription": "In the POD project, I built a landing page that showcases my skills in web development using fundamental technologies like JavaScript, HTML, and SCSS. The project's main highlights include its responsiveness to various screen sizes and its sleek hover states for interactive elements, creating an engaging user experience. Additionally, I implemented error handling for the form submission, ensuring that users receive feedback when trying to submit incomplete or incorrect information.\n\nOne of the technical achievements in this project was the manipulation of the Document Object Model (DOM). I practiced adding, deleting, and replacing elements within the DOM, enhancing my understanding of JavaScript's role in creating dynamic web content. This project was a valuable learning experience, helping me gain proficiency in front-end development and user interface design.",
-    "technologies": "HTML/JS/SCSS",
-    "preview": "../media/previews/pod-preview.jpg"
+    "technologies": "HTML/JS/SCSS"
+    
   },
   {
     "id": "githubsearch",
     "title": "GitHub",
     "shortDescription": "GitHubSearch is a web application developed with vanilla JavaScript, HTML, and SCSS, enabling users to search for GitHub accounts and view concise user summaries. It features responsive design, hover states, and integration with the GitHub API.",
     "fullDescription": "The GitHubSearch app is a practical web application that allows users to search for GitHub accounts using their usernames. Built using vanilla JavaScript, HTML, and SCSS, this project emphasizes responsive web design, ensuring that the app looks and works seamlessly on various screen sizes.\n\nOne of the project's key features is the implementation of hover states for all interactive elements, providing users with visual feedback as they navigate the app. Leveraging the GitHub API, I enabled users to search for GitHub users by username and fetch relevant information about the users, offering a convenient way to access GitHub profiles and summaries.\n\nDeveloping this application improved my skills in working with APIs and reinforced my knowledge of front-end web development techniques. It also highlighted the importance of creating user-friendly interfaces that respond well to user interactions.",
-    "technologies": "HTML/JS/SCSS/API",
-    "preview": "../media/previews/github-search-user-preview.jpg"
+    "technologies": "HTML/JS/SCSS/API"
+    
   },
   {
     "id": "portfolioapp",
     "title": "Portfolio",
     "shortDescription": "Portfolio is a multi-page personal website and portfolio built using React with Vite, HTML, and SCSS. It showcases my web development skills, features responsive design, smooth scrolling, form validation, and incorporates various React fundamentals and libraries.",
     "fullDescription": "The Portfolio app represents a significant step in my web development journey, as it marks my transition to using React and Vite for building web applications. This Single Page Application (SPA) showcases my projects and skills while offering an engaging user experience.\n\nSome of the notable features of this project include responsive layout design for each page, hover states for interactive elements, and smooth scrolling that activates when users click the 'About Me' call-to-action. The app also implements form validation, ensuring that users receive error messages when trying to submit the contact form without providing essential information such as email and name.\n\nIn terms of technology, this project served as my introduction to React, where I learned and applied key concepts such as components, props, and hooks (including useState and useEffect). I also developed a custom hook called ScrollToTheTop for enhanced user experience. Additionally, I incorporated the react-router-dom library to create a full SPA with smooth navigation between different sections of the site.\n\nOne of the project's unique features is the integration of a third-party library for the contact form, enhancing user interaction and making it easier for visitors to get in touch with me. I also implemented a slider to showcase my projects, demonstrating my improved CSS skills and understanding of web design principles.\n\nIn summary, the Portfolio app represents a milestone in my web development journey, combining responsive design, React fundamentals, and practical user interface features to create a dynamic and engaging personal website and portfolio.",
-    "technologies": "HTML/JS/React/SCSS/Vite",
-    "preview": "../media/previews/portfolio-preview.jpg"
+    "technologies": "HTML/JS/React/SCSS/Vite"
   },
   {
     "id": "passwordapp",
     "title": "Password",
     "shortDescription": "The password generator app that allows users to generate a password based on the selected inclusion options. The app also displays a strength rating for the generated password. The app is built with React and JS/HTML/SCSS.",
     "fullDescription": "The app is a useful tool for users who want to generate strong and secure passwords. It was also a good way to practice and summarize my skills in React and JS/HTML/CSS. I've learned a lot about such hooks as useState and got used to transferring component states from one to another.",
-    "technologies": "HTML/JS/React/SCSS/Vite",
-    "preview": "../media/previews/password-preview.jpg"
+    "technologies": "HTML/JS/React/SCSS/Vite"
   },
   {
     "id": "dictionaryapp",
     "title": "Dictionary",
     "shortDescription": "The Dictionary App, built using React JS, is a robust showcase of modern web development skills. It skillfully sidesteps prop drilling (a lot of knowledge absorbed about the useContext() hook), efficiently interacts with APIs using Axios, employs Material-UI for an elegant interface, and employs a refined component decomposition strategy.",
     "fullDescription": "Users can easily search for word definitions, phonetics, and synonyms, making it a versatile tool for language enthusiasts. The app elegantly manages data flow and promotes a clean, maintainable codebase. It excels at making asynchronous API requests and handling responses with finesse. The inclusion of Material-UI enhances the user experience, elevating both functionality and aesthetics.\n\nIn summary, the Dictionary App offers a user-friendly and visually appealing way to explore the world of words while showcasing my developer's dedication to improving myself with creating efficient applications.",
-    "technologies": "HTML/JS/React/SCSS/Vite/API",
-    "preview": "../media/previews/dictionary-preview.jpg"
+    "technologies": "HTML/JS/React/SCSS/Vite/API"
   },
   {
     "id": "dine",
     "title": "Dine",
     "shortDescription": "The Dine Restaurant application, meticulously crafted using React JS, is a dynamic business web solution featuring an intuitive reservation system. Seamlessly blending responsive design and intricate styling, this platform offers a streamlined experience for users to make hassle-free table reservations.",
     "fullDescription": "In spearheading the development of the Dine Restaurant application, my primary objective was to create an engaging business website that seamlessly integrates a table reservation system. Navigating the intricacies of Figma designs posed challenges, particularly in styling components, which I overcame through persistent problem-solving.\n\nThroughout the development journey, I deepened my understanding of React, leveraging custom hooks for dynamic data display and showcasing expertise in state management using useState and useEffect. The integration of libraries such as Formik and react-router-dom facilitated a streamlined form management system and basic routing functionalities. The project's focal point was on achieving optimal responsiveness. The mobile and tablet versions feature static layouts, while the desktop layout dynamically adjusts based on screen specifications.\n\nEfforts were invested in maintaining a well-structured codebase, ensuring project scalability and ease of maintenance. Technologically, the application is a fusion of HTML, SCSS, JS, React, Vite, providing a modern and efficient solution.",
-    "technologies": "HTML/JS/React/SCSS/Vite",
-    "preview": "../media/previews/dine-preview.jpg"
+    "technologies": "HTML/JS/React/SCSS/Vite"
   }
 ]

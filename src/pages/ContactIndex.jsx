@@ -3,8 +3,10 @@ import HeaderNav from "../components/HeaderNav";
 import Footer from "../components/Footer";
 import BottomLine from "../components/BottomLine";
 import ContactForm from "../components/ContactForm";
-
 import "../scss/ContactIndex.scss";
+import githubLinkImg from '../media/images/icons/github.svg'
+import twitterLinkImg from '../media/images/icons/twitter.svg'
+import linkedinLinkImg from '../media/images/icons/linkedin.svg'
 function Contact() {
   return (
     <div>
@@ -25,12 +27,12 @@ function Contact() {
         <ul className="links__icons-contact-page">
           <li>
             <a href="https://github.com/grischat" target="_blank">
-              <img src="../media/images/icons/github.svg" alt="github icon" />
+              <img src={githubLinkImg} alt="github icon" />
             </a>
           </li>
           <li>
             <a href="https://twitter.com/KosolapH" target="_blank">
-              <img src="../media/images/icons/twitter.svg" alt="twitter icon" />
+              <img src={twitterLinkImg} alt="twitter icon" />
             </a>
           </li>
           <li>
@@ -39,7 +41,7 @@ function Contact() {
               target="_blank"
             >
               <img
-                src="../media/images/icons/linkedin.svg"
+                src={linkedinLinkImg}
                 alt="linkedin icon"
               />
             </a>

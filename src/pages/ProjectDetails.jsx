@@ -1,7 +1,6 @@
 import projectsData from "../data/projects.json";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import "swiper/scss/navigation";
 import BottomLine from "../components/BottomLine";
 import Button from "../components/Button";
 import Wrapper from "../components/Wrapper";
@@ -10,8 +9,24 @@ import Footer from "../components/Footer";
 import "../scss/ProjectDetails.scss";
 import "../scss/main.scss";
 import ContactMeFooter from "../components/ContactMeFooter";
-
+//images
+import arrowLeftImg from "../media/images/icons/arrow-left.svg";
+import arrowRightImg from "../media/images/icons/arrow-right.svg";
+import podPreview from "../media/previews/pod-preview.jpg";
+import githubSearchPreview from "../media/previews/github-search-user-preview.jpg";
+import portfolioPreview from "../media/previews/portfolio-preview.jpg";
+import passwordPreview from "../media/previews/password-preview.jpg";
+import dictionaryPreview from "../media/previews/dictionary-preview.jpg";
+import dinePreview from "../media/previews/dine-preview.jpg";
 function ProjectDetails() {
+  const projectPreviews = {
+    pod: podPreview,
+    githubsearch: githubSearchPreview,
+    portfolioapp: portfolioPreview,
+    passwordapp: passwordPreview,
+    dictionaryapp: dictionaryPreview,
+    dine: dinePreview,
+  };
   const { projectId } = useParams();
   const projectIndex = projectsData.findIndex(
     (project) => project.id === projectId
@@ -58,7 +73,7 @@ function ProjectDetails() {
           <h1 className="project__header">{project.title}</h1>
           <img
             className="project__image"
-            src={project.preview}
+            src={projectPreviews[project.id]}
             alt="Project preview"
           ></img>
           <p className="description__p">{project.shortDescription}</p>
@@ -72,7 +87,7 @@ function ProjectDetails() {
               <img
                 id="img-prev"
                 className="btn__attr"
-                src="../media/images/icons/arrow-left.svg"
+                src={arrowLeftImg}
                 alt="Arrow previous"
               />
               <h3 id="subheader-prev" className="btn__attr">
@@ -86,7 +101,7 @@ function ProjectDetails() {
               <img
                 id="img-next"
                 className="btn__attr"
-                src="../media/images/icons/arrow-right.svg"
+                src={arrowRightImg}
                 alt="Arrow next"
               />
               <h3 id="subheader-next" className="btn__attr">
