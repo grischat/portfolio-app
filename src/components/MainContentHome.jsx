@@ -2,7 +2,7 @@ import "../scss/MainContentHome.scss";
 import Button from "./Button";
 import BottomLine from "./BottomLine";
 import useWindowResize from "../hooks/useWindowResize";
-import { useState, useEffect } from "react";
+
 import "../scss/main.scss";
 import "../scss/Button.scss";
 import { Link } from "react-router-dom";
@@ -13,40 +13,6 @@ import mobilePhotoHero from "../media/images/homepage/mobile/image-homepage-prof
 import tabletPhotoHero from "../media/images/homepage/tablet/image-homepage-profile.jpg";
 import desktopPhotoHero from "../media/images/homepage/desktop/image-homepage-profile.jpg";
 function MainContentHome() {
-  
-  // const [homepageImgMobile, setHomepageImgMobile] =
-  //   useState(mobileHomepageHero);
-  // const [homepageImgTablet, setHomepageImgTablet] =
-  //   useState(tabletHomepageHero);
-  // const [homepageImgDesktop, setHomepageImgDesktop] =
-  //   useState(desktopHomepageHero);
-  // // Photo image
-  // const [photoImgMobile, setPhotoImgMobile] = useState(mobilePhotoHero);
-  // const [photoImgTablet, setPhotoImgTablet] = useState(tabletPhotoHero);
-  // const [photoImgDesktop, setPhotoImgDesktop] = useState(desktopPhotoHero);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     if (window.innerWidth < 768) {
-  //       setHomepageImgMobile(mobileHomepageHero);
-  //       setPhotoImgMobile(mobilePhotoHero);
-  //     } else if (window.innerWidth > 768) {
-  //       setHomepageImgTablet(tabletHomepageHero);
-  //       setPhotoImgTablet(tabletPhotoHero);
-  //     } else if (window.innerWidth > 1440) {
-  //       setHomepageImgDesktop(desktopHomepageHero);
-  //       setPhotoImgDesktop(desktopPhotoHero);
-  //     }
-  //   };
-
-  //   window.addEventListener("resize", handleResize);
-
-  //   handleResize();
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
   const homepage = {
     mobileHomepage: mobileHomepageHero,
     tabletHomepage: tabletHomepageHero,
@@ -57,8 +23,8 @@ function MainContentHome() {
     tabletPhoto: tabletPhotoHero,
     desktopPhoto: desktopPhotoHero,
   };
-  const images = useWindowResize( homepage, photo );
-  console.log(homepage)
+  const images = useWindowResize(homepage, photo);
+
   return (
     <div className="main__content">
       <img
@@ -80,9 +46,7 @@ function MainContentHome() {
       <div className="aboutme__container">
         <img
           className="image__photo"
-          src={
-            images.photo.setPhotoImg
-          }
+          src={images.photo.setPhotoImg}
           alt="My photo"
         />
         <div className="aboutme__container-textWithButton">

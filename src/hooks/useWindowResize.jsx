@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useWindowResize = ( homepage, photo ) => {
+const useWindowResize = (homepage, photo) => {
   const [images, setImages] = useState({
     homepage: {
       setHomepageImg: "",
@@ -11,7 +11,6 @@ const useWindowResize = ( homepage, photo ) => {
       ...photo,
     },
   });
-  
 
   useEffect(() => {
     const handleLoad = () => {
@@ -46,11 +45,43 @@ const useWindowResize = ( homepage, photo ) => {
     };
     const getInitialLoadImages = handleLoad();
     setImages(getInitialLoadImages);
+    const handleResize = () => {
+      setImages((prevImages) => {
+        let resizedHomepage;
+        let resizedPhoto;
+        if (window.innerWidth < 768) {
+          resizedHomepage = homepage.mobileHomepage;
+          resizedPhoto = photo.mobilePhoto;
+        } else if (window.innerWidth > 768 && window.innerWidth < 1440) {
+          resizedHomepage = homepage.tabletHomepage;
+          resizedPhoto = photo.tabletPhoto;
+        } else {
+          resizedHomepage = homepage.desktopHomepage;
+          resizedPhoto = photo.desktopPhoto;
+        }
+        return {
+          ...prevImages,
+          homepage: {
+            ...prevImages.homepage,
+            setHomepageImg: resizedHomepage,
+          },
+          photo: {
+            ...prevImages.photo,
+            setPhotoImg: resizedPhoto,
+          },
+        };
+      });
+    };
+
+    // Вызываем handleResize при загрузке страницы
+    handleResize();
 
     window.addEventListener("load", handleLoad);
+    window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("load", handleLoad);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
   return images;
