@@ -1,6 +1,6 @@
 import "../scss/MainContentHome.scss";
-import Button from "./Button";
-import BottomLine from "./BottomLine";
+import Button from "../components/Button";
+import BottomLine from "../components/BottomLine";
 import useWindowResize from "../hooks/useWindowResize";
 
 import "../scss/main.scss";

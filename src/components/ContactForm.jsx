@@ -9,7 +9,7 @@ function ContactForm() {
     return (
       <div>
         <p className="sucess__msg">Your message has been successfully sent!</p>
-        <Link id="link" to="/portfolio">
+        <Link id="link" to="/portfolio-app/portfolio">
           <Button className="btn__goto"> GO TO PORTFOLIO</Button>
         </Link>
       </div>
