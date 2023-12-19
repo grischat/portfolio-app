@@ -13,7 +13,7 @@ import mobilePhotoHero from "../media/images/homepage/mobile/image-homepage-prof
 import tabletPhotoHero from "../media/images/homepage/tablet/image-homepage-profile.jpg";
 import desktopPhotoHero from "../media/images/homepage/desktop/image-homepage-profile.jpg";
 function MainContentHome() {
-  // //Homepage (monitor) Image
+  
   // const [homepageImgMobile, setHomepageImgMobile] =
   //   useState(mobileHomepageHero);
   // const [homepageImgTablet, setHomepageImgTablet] =
