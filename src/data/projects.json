@@ -41,6 +41,7 @@
     "title": "Dine",
     "shortDescription": "The Dine Restaurant application, meticulously crafted using React JS, is a dynamic business web solution featuring an intuitive reservation system. Seamlessly blending responsive design and intricate styling, this platform offers a streamlined experience for users to make hassle-free table reservations.",
     "fullDescription": "In spearheading the development of the Dine Restaurant application, my primary objective was to create an engaging business website that seamlessly integrates a table reservation system. Navigating the intricacies of Figma designs posed challenges, particularly in styling components, which I overcame through persistent problem-solving.\n\nThroughout the development journey, I deepened my understanding of React, leveraging custom hooks for dynamic data display and showcasing expertise in state management using useState and useEffect. The integration of libraries such as Formik and react-router-dom facilitated a streamlined form management system and basic routing functionalities. The project's focal point was on achieving optimal responsiveness. The mobile and tablet versions feature static layouts, while the desktop layout dynamically adjusts based on screen specifications.\n\nEfforts were invested in maintaining a well-structured codebase, ensuring project scalability and ease of maintenance. Technologically, the application is a fusion of HTML, SCSS, JS, React, Vite, providing a modern and efficient solution.",
-    "technologies": "HTML/JS/React/SCSS/Vite"
+    "technologies": "HTML/JS/React/SCSS/Vite",
+    "link": "https://grischat.github.io/dine-restaurant-app/"
   }
 ]
