@@ -28,7 +28,8 @@
     "title": "Password",
     "shortDescription": "The password generator app that allows users to generate a password based on the selected inclusion options. The app also displays a strength rating for the generated password. The app is built with React and JS/HTML/SCSS.",
     "fullDescription": "The app is a useful tool for users who want to generate strong and secure passwords. It was also a good way to practice and summarize my skills in React and JS/HTML/CSS. I've learned a lot about such hooks as useState and got used to transferring component states from one to another.",
-    "technologies": "HTML/JS/React/SCSS/Vite"
+    "technologies": "HTML/JS/React/SCSS/Vite",
+    "link": "https://grischat.github.io/generate-password-app/"
   },
   {
     "id": "dictionaryapp",
