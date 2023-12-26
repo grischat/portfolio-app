@@ -3,7 +3,7 @@
     "id": "pod",
     "title": "POD",
     "shortDescription": "POD is a responsive landing page created using vanilla JavaScript, HTML, and SCSS. It boasts interactive elements with hover states, error messages for form submissions, and dynamic manipulation of the Document Object Model (DOM).",
-    "fullDescription": "In the POD project, I built a landing page that showcases my skills in web development using fundamental technologies like JavaScript, HTML, and SCSS. The project's main highlights include its responsiveness to various screen sizes and its sleek hover states for interactive elements, creating an engaging user experience. Additionally, I implemented error handling for the form submission, ensuring that users receive feedback when trying to submit incomplete or incorrect information.\n\nOne of the technical achievements in this project was the manipulation of the Document Object Model (DOM). I practiced adding, deleting, and replacing elements within the DOM, enhancing my understanding of JavaScript's role in creating dynamic web content. This project was a valuable learning experience, helping me gain proficiency in front-end development and user interface design.",
+    "fullDescription": "In the POD project, I built a landing page that helps me to train my skills in layouting. UPD(12/26/2023) As for this project a lot of mistakes has been made and a lot but still a lot of knowledge absorbed. The POD needs a big layout refactoring with my current, more advanced skills in it. But this is my first starting point as a developer and the future projects are showing my not bad growth!",
     "technologies": "HTML/JS/SCSS",
     "link": "https://grischat.github.io/pod-landing/"
   },
